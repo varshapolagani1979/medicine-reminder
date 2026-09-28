@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #222;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+h1 {
+    text-align: center;
+    color: #4f46e5;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.add-button {
+    display: block;
+    width: 200px;
+    margin: 0 auto 30px;
+    text-align: center;
+    padding: 14px;
+    background: #4f46e5;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.medicine-list {
+    display: grid;
+    gap: 20px;
+}
+
+.medicine-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.medicine-card h2 {
+    color: #4f46e5;
+}
+
+.actions {
+    margin-top: 20px;
+}
+
+.edit-button,
+.delete-button {
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+
+.edit-button {
+    background: #f59e0b;
+    color: white;
+}
+
+.delete-button {
+    background: #ef4444;
+    color: white;
+}
+
+.empty {
+    background: white;
+    padding: 40px;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.form-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto;
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+button {
+    margin-top: 25px;
+    padding: 13px;
+    border: none;
+    border-radius: 7px;
+    background: #4f46e5;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover,
+.add-button:hover {
+    opacity: 0.9;
+}
+
+.back {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    color: #4f46e5;
+    text-decoration: none;
+}

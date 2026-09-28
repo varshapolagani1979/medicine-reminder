@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Edit Medicine</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="form-container">
+
+    <h1>✏️ Edit Medicine</h1>
+
+    <form method="POST">
+
+        <label>Medicine Name</label>
+
+        <input
+            type="text"
+            name="name"
+            value="{{ medicine['name'] }}"
+            required
+        >
+
+        <label>Dosage</label>
+
+        <input
+            type="text"
+            name="dosage"
+            value="{{ medicine['dosage'] }}"
+            required
+        >
+
+        <label>Reminder Time</label>
+
+        <input
+            type="time"
+            name="time"
+            value="{{ medicine['time'] }}"
+            required
+        >
+
+        <label>Start Date</label>
+
+        <input
+            type="date"
+            name="start_date"
+            value="{{ medicine['start_date'] }}"
+            required
+        >
+
+        <label>End Date</label>
+
+        <input
+            type="date"
+            name="end_date"
+            value="{{ medicine['end_date'] }}"
+            required
+        >
+
+        <label>Instructions</label>
+
+        <textarea
+            name="instructions">{{ medicine['instructions'] }}</textarea>
+
+        <button type="submit">
+            Update Medicine
+        </button>
+
+    </form>
+
+    <a href="{{ url_for('index') }}" class="back">
+        ← Back to Home
+    </a>
+
+</div>
+
+</body>
+
+</html>
